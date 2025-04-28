@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programme ADESTI</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            padding-top: 80px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            position: fixed;
+            top: 0;   
+            left: 0;
+            width: 100%;
+            background-color: #006400;
+            color: white;
+            padding: 15px;    
+            text-align: center;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 26px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        section {
+            padding: 40px 20px;
+            margin: 20px;
+            border-radius: 8px;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        section h2 {
+            color: #006400;
+            border-left: 5px solid #006400;
+            padding-left: 10px;
+        }
+
+        footer {
+            text-align: center;       
+            padding: 15px;
+            background-color: #e0e0e0;
+            color: #444;
+            margin-top: 30px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"] {
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 12px;
+            background-color: #006400;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #228B22;
+        }
+
+        .formations ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .formations ul li {
+            margin: 12px 0;
+            font-size: 16px;
+        }
+
+        .formations ul li strong {
+            color: #006400;
+        }
+
+        details {
+            margin-bottom: 15px;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fafafa;
+        }
+
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .hero {
+            background-color: #eafbe7;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .hero h2 {
+            margin-bottom: 10px;
+            font-size: 28px;
+            color: #2e7d32;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+    <header> 
+        <h1>ADESTI - Centre de Formation en Système Industriel</h1>
+        <nav> 
+            <ul> 
+                <li><a href="#about">🏫 À propos</a></li>
+                <li><a href="#courses">📚 Formations</a></li>
+                <li><a href="#shop">🛒 Boutique</a></li>
+                <li><a href="#contact">📞 Contact</a></li>
+                <li><a href="#registration">📝 Inscription</a></li> 
+                <li><a href="#faq">❓ FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Bienvenue à ADESTI</h2>
+        <p>Des formations de qualité en systèmes industriels pour bâtir votre avenir professionnel.</p>
+    </section>
+
+    <section id="about"> 
+        <h2>À propos d'ADESTI</h2>
+        <p>ADESTI est un centre spécialisé dans la formation des étudiants et stagiaires dans les domaines des systèmes industriels. Nous nous engageons à fournir des formations de qualité, adaptées aux besoins actuels du marché.</p>
+    </section>
+
+    <section id="courses" class="formations">
+        <h2>Nos Formations</h2>
+        <p>Nous proposons une gamme de formations pratiques et théoriques :</p>
+        <ul>
+            <li><strong>Automatisation et Robotique :</strong> Programmez et manipulez des robots industriels.</li>
+            <li><strong>Maintenance Industrielle :</strong> Maitrisez la maintenance des machines industrielles.</li>
+            <li><strong>Programmation des Automates :</strong> Apprenez à coder des automates pour la fabrication.</li>
+        </ul>
+    </section>
+
+    <section id="shop">
+        <h2><a href="boutique.html" style="text-decoration: none; color: #006400;">🛒 Boutique Technique</a></h2>
+        <p>🔍 Cliquez ici pour découvrir nos composants électroniques, kits Arduino et modules robotiques en vente.</p>
+        <a href="boutique.html" style="display: inline-block; padding: 10px 20px; background-color: #006400; color: white; border-radius: 5px; text-decoration: none;">Accéder à la boutique</a>
+    </section>
+
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <p>📧 Email : <a href="mailto:contact@adesti.com">contact@adesti.com</a></p>
+        <p>📱 Téléphone : <a href="tel:+2290166030209">+229 01 66 03 02 09</a></p>
+        <p>📍 Adresse : Gbèdégbé, Cotonou, Bénin</p>
+    </section>
+
+    <section id="registration">
+        <h2>Formulaire d'Inscription</h2>
+        <form action="#" method="POST">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Adresse e-mail :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Numéro de téléphone :</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <button type="submit">S'inscrire</button>
+        </form>
+    </section>
+
+    <section id="faq">
+        <h2>Questions Fréquentes (FAQ)</h2>
+        <details>
+            <summary>📌 Quelles sont les conditions d'admission ?</summary>
+            <p>Un diplôme de niveau secondaire ou équivalent est requis, selon la formation.</p>
+        </details>
+        <details>
+            <summary>📌 Comment puis-je m'inscrire ?</summary>
+            <p>Remplissez notre formulaire en ligne. Vous recevrez une confirmation par e-mail.</p>
+        </details>
+        <details>
+            <summary>📌 Où se situe le centre ADESTI ?</summary>
+            <p>Nous sommes situés à Gbèdégbé, Cotonou, Bénin.</p>
+        </details>
+        <details>
+            <summary>📌 Quels sont les horaires de formation ?</summary>
+            <p>Du lundi au vendredi, de 8h à 17h.</p>
+        </details>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 ADESTI - Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
