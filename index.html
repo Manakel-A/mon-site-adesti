@@ -9,13 +9,11 @@
     <meta name="keywords" content="ADESTI-Benin, formation industrielle, formation informatique, Bénin, Arduino, composants électroniques" />
     <meta name="robots" content="index, follow" />
 
-    <!-- Open Graph pour réseaux sociaux -->
     <meta property="og:title" content="ADESTI-Benin | Centre de Formation" />
     <meta property="og:description" content="Rejoignez ADESTI-Benin pour des formations pratiques en systèmes industriels et informatique, et découvrez notre boutique technique." />
     <meta property="og:url" content="https://manakel-a.github.io/mon-site-adesti/" />
     <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=ADESTI-Benin" />
     <meta name="twitter:card" content="summary_large_image" />
-    
 
     <style>
         body {
@@ -60,6 +58,39 @@
             color: white;
             text-decoration: none;
             font-size: 17px;
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 28px;
+            cursor: pointer;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                background-color: #006400;
+                padding: 0;
+                margin: 0;
+            }
+
+            nav ul li {
+                display: block;
+                text-align: center;
+                padding: 10px 0;
+                border-top: 1px solid #ffffff55;
+            }
+
+            .hamburger {
+                display: block;
+                margin-top: 10px;
+            }
+
+            .menu-open nav ul {
+                display: flex;
+            }
         }
 
         section {
@@ -169,6 +200,7 @@
 <body>
     <header>
         <h1>ADESTI-Benin - Centre de Formation en Système Industriel</h1>
+        <div class="hamburger" onclick="toggleMenu()">☰ Menu</div>
         <nav>
             <ul>
                 <li><a href="#about">🏫 À propos</a></li>
@@ -253,5 +285,11 @@
     <footer>
         <p>&copy; 2025 ADESTI-Benin - Tous droits réservés.</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            document.body.classList.toggle('menu-open');
+        }
+    </script>
 </body>
 </html>
